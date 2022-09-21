@@ -5,7 +5,7 @@ on:
     branches: [ develop ]
 
 env:
-  ecr-repo: test
+  ecr-repo: skt-user14
   image-tag: orange
 
 jobs:
@@ -54,8 +54,8 @@ jobs:
 
       - name: git push
         run: |
-          git config --global user.email "skwjdgh1@gmail.com"
-          git config --global user.name "Najeongho"
+          git config --global user.email "lee.seungjin@sk.com"
+          git config --global user.name "seungjinlee1"
           git pull origin main
           git add values.yaml
           git commit -m "[feat] trigger to deploy microservice container to kubernetes"
